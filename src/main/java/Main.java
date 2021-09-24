@@ -11,8 +11,8 @@ public class Main {
 
             // если оба числа римские
             if (RomanNumOperations.isRoman(expression[0], expression[2])) {
-                op1 = RomanNumOperations.getArabicNumber(expression[0]);
-                op2 = RomanNumOperations.getArabicNumber(expression[2]);
+                op1 = RomanNumOperations.romanToArabic(expression[0]);
+                op2 = RomanNumOperations.romanToArabic(expression[2]);
                 System.out.println(RomanNumOperations.calculate(op1, op2, operator));
             }
             // если оба числа арабские
